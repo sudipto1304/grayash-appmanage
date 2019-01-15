@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: MANAGE-APP
+server:
+  port: 8907
