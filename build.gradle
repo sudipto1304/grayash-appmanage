@@ -42,6 +42,7 @@ dependencies {
 	implementation group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.8.0'
 	implementation('org.springframework.cloud:spring-cloud-starter-netflix-ribbon')
 	implementation group: 'com.github.gray-ash', name: 'security-filter', version: '1.0.9-SNAPSHOT'
+	implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.8.1'
 }
 
 dependencyManagement {

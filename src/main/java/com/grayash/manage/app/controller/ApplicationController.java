@@ -65,5 +65,20 @@ public class ApplicationController implements CodeConstant{
             Log.debug("returning response "+response);
         return new ResponseEntity<>(response, HttpStatus.ACCEPTED);
     }
+	
+	@ApiResponses(value = {
+            @ApiResponse(code = 202, message = "Accepted", response = Status.class),
+            @ApiResponse(code = 412, message = "Precondition Failed"),
+            @ApiResponse(code = 500, message = "Internal Server Error")
+    })
+    @RequestMapping(value="/otp/validate", method=RequestMethod.POST, produces=MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Status> validateOtp(@RequestBody OTPRequest request, HttpServletRequest servletRequest) {
+        if(Log.isDebugEnabled())
+            Log.debug("Request to generate OTP for the customerId::"+request);
+        Status response = service.validateOTP(request);
+        if(Log.isDebugEnabled())
+            Log.debug("returning response "+response);
+        return new ResponseEntity<>(response, HttpStatus.ACCEPTED);
+    }
 
 }
