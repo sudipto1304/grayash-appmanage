@@ -24,6 +24,7 @@ public class FeignClientConfiguration {
 	        	try {
 	        		UsernamePasswordAuthenticationToken authentication = (UsernamePasswordAuthenticationToken) SecurityContextHolder.getContext().getAuthentication();
 		            requestTemplate.header("Authorization", authentication.getCredentials().toString());   
+		            requestTemplate.header("csid", authentication.getPrincipal().toString()); 
 				} catch (Exception e) {
 					if(Log.isErrorEnabled())
 						Log.error("FeignClientConfiguration error::"+e.getMessage());

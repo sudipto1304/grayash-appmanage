@@ -8,7 +8,7 @@ import lombok.ToString;
 
 @Data
 @ToString
-public class OTPRequest implements Serializable{
+public class OTPRequest extends CommonRequest implements Serializable{
 
 	private String phoneNumber;
 	private String flowId;
