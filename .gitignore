@@ -6,3 +6,5 @@
 .gradle/vcsWorkingDirs/gc.properties
 .project
 .settings/org.eclipse.buildship.core.prefs
+*.class
+*.prefs
