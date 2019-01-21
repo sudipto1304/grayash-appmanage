@@ -1,10 +1,11 @@
 package com.grayash.manage.app.model.response;
 
-import lombok.Data;
-import lombok.ToString;
+import java.io.Serializable;
+
 import org.springframework.http.HttpStatus;
 
-import java.io.Serializable;
+import lombok.Data;
+import lombok.ToString;
 
 @Data
 @ToString

@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.grayash.manage.app.model.request.OTPRequest;
-import com.grayash.manage.app.model.response.OTPResponse;
 import com.grayash.manage.app.model.response.Status;
 import com.grayash.manage.app.service.AppProcessService;
 import com.grayash.manage.app.util.CodeConstant;
