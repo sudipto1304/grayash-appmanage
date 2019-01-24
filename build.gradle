@@ -39,11 +39,9 @@ configurations.all {
 dependencies {
 	
 	implementation('org.springframework.cloud:spring-cloud-starter-oauth2')
-	implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.8.1'
 	implementation('org.springframework.boot:spring-boot-starter-web')
 	implementation('org.springframework.cloud:spring-cloud-starter-netflix-ribbon')
 	implementation('org.springframework.cloud:spring-cloud-starter-openfeign')
-	runtimeOnly('mysql:mysql-connector-java')
 	compileOnly('org.projectlombok:lombok')
 	implementation('org.springframework.cloud:spring-cloud-starter-sleuth')
 	implementation('org.springframework.cloud:spring-cloud-starter-zipkin')
@@ -52,9 +50,9 @@ dependencies {
 	implementation group: 'io.springfox', name: 'springfox-swagger2', version: '2.8.0'
 	implementation group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.8.0'
 	implementation group: 'io.jsonwebtoken', name: 'jjwt', version: '0.7.0'
-	implementation group: 'com.github.gray-ash', name: 'security-filter', version: '1.0.10-SNAPSHOT'
+	implementation group: 'com.github.gray-ash', name: 'security-filter', version: '1.0.11-SNAPSHOT'
 	implementation group: 'com.github.gray-ash', name: 'audit-activity', version: '1.0.9-SNAPSHOT'
-	implementation group: 'com.github.gray-ash', name: 'common-exception', version: '1.0.1-SNAPSHOT'
+	implementation group: 'com.github.gray-ash', name: 'common-exception', version: '1.0.2-SNAPSHOT'
 	implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.8.1'
 }
 

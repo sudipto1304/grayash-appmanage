@@ -5,9 +5,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
-import com.github.grayash.exception.InvalidOTPException;
-import com.github.grayash.exception.OTPMaxAttemptsException;
-import com.github.grayash.exception.PCRuntimeException;
+import com.grayash.exception.InvalidOTPException;
+import com.grayash.exception.OTPMaxAttemptsException;
+import com.grayash.exception.PCRuntimeException;
 import com.grayash.manage.app.client.CrudClient;
 import com.grayash.manage.app.model.request.FlowType;
 import com.grayash.manage.app.model.request.InvalidOTPAttemptRequest;

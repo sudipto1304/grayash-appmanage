@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
-import com.github.grayash.exception.InvalidOTPException;
-import com.github.grayash.exception.OTPMaxAttemptsException;
-import com.github.grayash.exception.PCRuntimeException;
 import com.grayash.auditactivity.utils.CommonUtils;
+import com.grayash.exception.InvalidOTPException;
+import com.grayash.exception.OTPMaxAttemptsException;
+import com.grayash.exception.PCRuntimeException;
 import com.grayash.manage.app.client.CrudClient;
 import com.grayash.manage.app.model.response.Status;
 import com.grayash.manage.app.util.CodeConstant;
